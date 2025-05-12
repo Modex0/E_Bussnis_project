@@ -10,8 +10,8 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(morgan("dev"));
 
-const StudentAPI = require("./routers/StudentRouter")
-const DoctorsAPI = require("./routers/DoctorsRouter")
+const StudentAPI = require("./routers/StudentRouter");
+const DoctorsAPI = require("./routers/DoctorsRouter");
 
 app.listen(port, () => {
   DBConnect(process.env.DB);
@@ -23,5 +23,5 @@ app.get("/", (req, res) => {
   res.json({ message: "Server is running" });
 });
 
-app.use("/api/student", StudentAPI)
-app.use("/api/doctors", DoctorsAPI)
+app.use("/api/student", StudentAPI);
+app.use("/api/doctors", DoctorsAPI);
