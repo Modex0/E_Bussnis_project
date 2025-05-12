@@ -40,7 +40,7 @@ const updateStudent = async (req, res) => {
     const updatedStudent = await StudentDB.findByIdAndUpdate(
       req.params.stdid,
       req.body,
-      { new: true }
+      { new: true, runValidators: true }
     );
     if (!updatedStudent) {
       return res.status(404).json({ message: "Student not found" });
