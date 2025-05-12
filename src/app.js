@@ -14,7 +14,7 @@ const StudentAPI = require("./routers/StudentRouter");
 const DoctorsAPI = require("./routers/DoctorsRouter");
 
 app.listen(port, () => {
-  DBConnect(process.env.DB);
+  DBConnect();
   console.log(`Server is running on http://localhost:${port}`);
 });
 
