@@ -26,7 +26,6 @@ npm install
 ```env
 PORT=3000
 DB=mongodb://localhost:27017/ebusiness_db
-JWT_SECRET=your_jwt_secret
 ```
 
 ## 📁 Project Structure
