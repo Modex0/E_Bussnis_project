@@ -1,0 +1,19 @@
+{
+  "name": "e_bussnis_project",
+  "version": "1.0.0",
+  "description": "hello world project for express monngoose",
+  "license": "ISC",
+  "author": "Muhammed Ibrahim Al-sayed Hamed",
+  "type": "commonjs",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node ."
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.2",
+    "morgan": "^1.10.0"
+  }
+}
